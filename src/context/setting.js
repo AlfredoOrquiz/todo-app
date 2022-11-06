@@ -7,7 +7,6 @@ function SettingsProvider(props) {
   const [ numberOfItems, setNumberOfItems ] = useState(3);
   const [ sortBy, setSortBy ] = useState('added');
 
-  // on Component Mount -> load settings from localstorage
   useEffect(() => {
     const storage = localStorage.getItem('settings');
     if(storage) {
@@ -17,15 +16,6 @@ function SettingsProvider(props) {
       setSortBy(storageObject.sortBy);
     }
   }, []);
-
-  // const setSort = (value) => {
-  //   switch(value) {
-  //     case 'added':
-  //     case 'difficulty':
-  //     default:
-  //       alert('Invalid value');
-  //   }
-  // }
 
   return (
     <SettingsContext.Provider
