@@ -36,6 +36,10 @@ Optional: Sort the items based on any of the keys (i.e. difficulty).
 ![Lab 31](Images/Lab-31.jpg)
 
 ## Deployed site
+https://todo-list-template.netlify.app/
+
+## Tests
+To run test, type "npm Lab-32"
 
 ### Contributions
 Jeffrey Smith, Jordan Yamada, TA's
